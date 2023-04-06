@@ -1,0 +1,30 @@
+﻿[Test]
+Programm=SimpleTest
+Version=0.1
+TestName=Тест по групповому занятию №4
+Author=Автор теста
+MessageOnComplete=Тест завершен!
+AllowFinish=0
+ShowResult=1
+DisableOpenTest=1
+ExitOnComplete=0
+LastQ=2
+
+[Q0]
+QLabel=Основой системы ГЛОНАСС являются 
+LastA=2
+A0=10 спутников
+A1=*23 спутника
+A2=34 спутника 
+
+[Q1]
+QLabel=Эфемериды передаются ... 
+LastA=2
+A0=на ИСЗ
+A1=*на борт ВС
+A2=на наземные радиостанции 
+
+[Q2]
+QLabel=Еще один вопрос
+LastA=-1
+

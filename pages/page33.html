@@ -1,0 +1,982 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><FONT face=""></FONT>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Детерминированные 
+сигналы</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Для 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">реализации 
+того или иного принципа действия радиотехнической системы и получения при этом 
+связной, навигационной информации, информации о подвижных и неподвижных объектах 
+методами радиолокации и т.д. применяются детерминированные сигналы. 
+Детерминированные сигналы могут быть непрерывными и импульсными</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">.</SPAN></FONT></FONT></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Детерминированным 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">называется 
+сигнал, закон изменения которого описывается совершенно определенной функцией 
+времени. Каждому моменту времени -∞‹</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">‹∞ 
+детерминированного сигнала соответствует совершенно определенное, известное 
+значение тока </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">i</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">) 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">и 
+напряжения </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">u</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">)</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">.</SPAN></FONT></FONT></FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""></FONT><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</P>
+<P 
+style="TEXT-ALIGN: center; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Непрерывные 
+сигналы</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">. 
+Самый простой – это гармонический </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">сигнал:</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: center; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">u(t) 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">=</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">U</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">m</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">sin</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(Ω</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">c</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t+φ</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">0</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">)</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN></FONT></FONT></FONT></P></SPAN></SPAN></SPAN>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.1.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.1.png"></FONT></SPAN></P><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-bidi-theme-font: minor-bidi; mso-ascii-font-family: Tahoma; mso-fareast-theme-font: minor-fareast; mso-font-kerning: 12.0pt; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%">
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><FONT face=""></FONT><SPAN 
+style="mso-bidi-font-weight: bold">&nbsp;</P>
+<P 
+style="TEXT-ALIGN: center; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: #c00000; FONT-SIZE: 20pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: 'Times New Roman'">Гармонический 
+ВЧ сигнал и его спектр</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: #c00000; FONT-SIZE: 20pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: 'Times New Roman'"><IMG 
+class=image alt=19.2.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.2.png"></SPAN></FONT></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: center; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: #c00000; FONT-SIZE: 20pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: 'Times New Roman'"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: center; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: #c00000; FONT-SIZE: 20pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: 'Times New Roman'"><FONT 
+face=""><IMG class=image alt=19.3.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.3.png"></FONT></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><FONT face=""><FONT size=+0><FONT 
+size=+0>&nbsp;<SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Негармонические 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">сигналы 
+согласно теореме Фурье могут быть представлены в виде бесконечного 
+гармонического ряда или интеграла.</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Периодические 
+сигналы </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">представляются 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">в 
+виде бесконечного ряда:</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">U</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">)=</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">U</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">0</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">/2+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">U</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">m</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">1</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">sin</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ω</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">1</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">φ</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">1</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">)+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">U</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">m</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">2</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">sin</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(2</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ω</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">1</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">φ</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">2</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">)+…+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">U</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">mk</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">sin</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">k 
+Ω</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">1</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">t</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">φ</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; VERTICAL-ALIGN: sub; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-text-raise: -25%">k</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">)+… 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: center; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">где 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">k=1</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">,2,3…</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">- 
+номер гармоники.</SPAN></FONT></FONT></FONT></P><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></SPAN>
+<P 
+style="TEXT-ALIGN: center; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P></SPAN>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><FONT face=""><IMG class=image alt=19.4.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.4.png"></FONT></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><FONT face=""><FONT size=+0><FONT 
+size=+0>&nbsp;<SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Периодический 
+негармонический НЧ сигнал и его спектр</SPAN></FONT></FONT></FONT></P></SPAN>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><FONT face=""></FONT><SPAN 
+style="mso-bidi-font-weight: bold">&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Колебания 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">с 
+частотой Ω1 называются основной или первой гармоникой, а с частотами 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ωk</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">=kΩ1 
+называются высшими гармониками.</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Зависимость 
+амплитуд гармонических составляющих </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Umk</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+от частоты </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ωk</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+представляет собой амплитудный спектр сигнала. </SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Зависимость 
+фаз гармоник<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">φk</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>от </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ωk</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+называется фазовым спектром.</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""></FONT><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Спектры 
+непериодических сигналов </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">определяются 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">интегралом 
+Фурье</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.5.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.5.png"></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.6.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.6.png"></FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face="">Пример непериодического сигнала и его спектр</FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""></FONT><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">В 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">авиационных 
+радиотехнических системах, кроме гармонических и негармонических непрерывных 
+сигналов, используются также импульсные сигналы. Импульсным считается такой 
+сигнал, который представляет собой кратковременные, сравнимые по длительности с 
+временем переходных процессов в цепях, всплески напряжения или тока</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">. 
+Самый </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">простой, 
+идеализированный, импульсный сигнал - это прямоугольный импульс. 
+Низкочастотный</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="mso-spacerun: yes">&nbsp;</SPAN>прямоугольный импульс (видеоимпульс) 
+представляет собой физическую реализацию функции</FONT></FONT></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.7.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.7.png"></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.8.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.8.png"></FONT></SPAN></P></SPAN></SPAN>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0>&nbsp;<SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Последовательность 
+прямоугольных импульсов</SPAN></FONT></FONT></FONT></P></SPAN>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Кроме 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">прямоугольных 
+импульсов применяются<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>идеализированные треугольные (пилообразные) </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">и 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">трапециидальные</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">импульсы</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">.</SPAN></FONT></FONT></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.9.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.9.png"></FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face="">Последовательность треугольных и пилообразных 
+видеоимпульсов</FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.10.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.10.png"></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face="">Последовательность трапециидальных импульсов</FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">В 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">каскадах 
+радиотехнических систем импульсные сигналы подвергаются линейным и нелинейным 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">искажениям.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Благодаря 
+этому фронт импульса удлиняется, а вершина приобретает спад </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">∆.</SPAN></FONT></FONT></FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.11.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.11.png"></FONT></SPAN></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0>&nbsp;<SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Искажения 
+прямоугольного 
+видеоимпульса</SPAN></FONT></FONT></FONT></SPAN></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""></FONT><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Длительность 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">непрямоугольных 
+импульсов определяется, как правило, на уровне 0,5Uo. Иные случаи<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>для конкретных устройств оговариваются в 
+технических требованиях. </SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="mso-spacerun: yes"><FONT face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Короткие 
+видеоимпульсы удобно аппроксимировать импульсами<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>колокольной<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">формы.</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"></SPAN><FONT 
+face=""><IMG class=image alt=19.12.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.12.png"></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""></FONT>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Общий 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">вид 
+графического представления амплитудного спектра видеоимпульсов<SPAN 
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>показан<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN>на 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">рисунке. 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Этот 
+спектр линейчатый и бесконечный. В общем случае частотное расстояние между двумя 
+соседними гармониками обратно пропорционально периоду следования импульсов. 
+Огибающая гармоник </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ф(</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: el; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ω</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">) 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">имеет 
+вид [(</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">sinx</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">)/x], 
+где аргумент х однозначно определен длительностью и формой 
+видеоимпульса</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.13.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.13.png"></FONT></SPAN></P></SPAN></SPAN></SPAN>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN>&nbsp;</P></SPAN></SPAN>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""></FONT><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Импульсный 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">высокочастотный 
+сигнал (радиоимпульс) представляет собой ограниченные по времени высокочастотные 
+колебания </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">(пачку 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">колебаний). 
+Длительность существования </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">пачки 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">соизмерима 
+с длительностью переходных процессов в устройстве, 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">предназначенном 
+для обработки радиоимпульсов. Форма радиоимпульсов определяется огибающей 
+колебаний. Идеальными являются прямоугольные </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">радиоимпульсы. 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Реальные 
+радиоимпульсы имеют фронты<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>конечной 
+длительности и могут быть представлены в виде<SPAN 
+style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN>колокольных </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">импульсов.</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.14.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.14.png"></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Последовательность 
+прямоугольных </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">радиоипульсов</SPAN></FONT></FONT></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.15.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.15.png"></FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face="">Форма реальных коротких радиоимпульсов</FONT></SPAN></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""></FONT><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Длительность 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">радиоимпульсов 
+также определяется,<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>как правило, на уровне 0,5 от максимального 
+размаха</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Амплитудный 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">спектр 
+последовательности </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">радиоимпульсов 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">также 
+линейчатый, и бесконечный. Но в отличие от спектра видеоимпульсов он 
+двухсторонний. Центральная частота спектра равна несущей частоте </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">fo</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+. Реальные радиосигналы всегда ограничены во времени. Поэтому и их спектры 
+отличаются от спектров идеализированных сигналов. Но для достаточно длинных 
+сообщений удобно представление сигнала бесконечным во времени. Это позволяет 
+упростить анализ при<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>описании 
+сигналов близком к адекватному.</SPAN></FONT></FONT></FONT></SPAN></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.16.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.16.png"></FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0>&nbsp;<SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Амплитудный 
+спектр последовательности радиоимпульсов 
+</SPAN></FONT></FONT></FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Для 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">переноса 
+сообщения применяется модуляция высокочастотных колебаний низкочастотным 
+сигналом. Самый простой способ модуляции – амплитудная, частотная<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>или фазовая манипуляция. При манипуляции 
+соответствующий параметр высокочастотных колебаний в моменты времени 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">tм</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+и </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">tп</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+изменяется скачком. При каждом воздействии<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>манипулирующего сигнала передатчик начинает вырабатывать колебания с 
+другим, соответствующим манипулирующему воздействию, параметром. Манипуляция 
+применяется в системах и комплексах радиосвязи при амплитудной, </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">частотной 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">или 
+фазовой </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">телеграфии.</SPAN></FONT></FONT></FONT></SPAN></SPAN></SPAN></P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.17.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.17.png"></FONT></SPAN></SPAN></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">АМн</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.18.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.18.png"></FONT></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ч</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Мн</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face="">&nbsp;<IMG class=image alt=19.19.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.19.png"></FONT></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Ф</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Мн</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">При 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">непрерывном 
+изменении амплитуды, частоты или фазы высокочастотного колебания образуются 
+амплитудно-модулированные<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>(АМ) 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">колебания, 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">или 
+колебания, модулированные по углу (соответственно ЧМ, или </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">ФМ).</SPAN></FONT></FONT></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></SPAN></SPAN>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.20.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.20.png">&nbsp;</FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">Высокочастотный 
+</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">сигнал 
+с амплитудной модуляцией<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>и его 
+спектр</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 10pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">.</SPAN></FONT></FONT></FONT></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 10pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 10pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.21.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.21.png"></FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru" 
+align=left><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 10pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Спектр 
+реального</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">АМ</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">сигнала</SPAN></FONT></FONT></FONT></SPAN></SPAN></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru" 
+align=left><FONT face=""></FONT><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 10pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">&nbsp;</P>
+<P 
+style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Характерная 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">особенность 
+АМ колебаний – симметричность спектра относительно несущей частоты </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">fо</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">. 
+Кроме несущей в простейшем случае спектр содержит 
+</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru" 
+align=left><FONT face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">две 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">боковые 
+частоты, амплитуды которых определяются глубиной модуляции m. При модуляции 
+сложным, например звуковым, сигналом в спектре </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">образуются 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">симметричные 
+боковые полосы – верхняя боковая (ВБП) и нижняя боковая (НБП). Обе полосы 
+содержат одинаковые сообщения</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">. 
+Так </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">что 
+сигнал АМ обладает избыточностью. Без потери информации можно передавать только 
+одну полосу - ВБП или НБП. Сигнал, сформированный таким образом, что содержит 
+одну боковую полосу, называется сигналом с однополосной модуляцией (ОМ). ОМ 
+сигнал<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>может быть с несущей, с 
+частично подавленной несущей или полностью подавленной 
+несущей.</SPAN></FONT></FONT></FONT></P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru" 
+align=left><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</P>
+<P 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; VERTICAL-ALIGN: baseline; language: ru" 
+align=left><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.22.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.22.png"></FONT></SPAN></SPAN></SPAN></SPAN></P></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><FONT face=""></FONT></SPAN>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><FONT face=""><IMG class=image alt=19.23.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.23.png"></FONT></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><FONT face=""><FONT size=+0><FONT 
+size=+0><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">Высокочастотный 
+</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">сигнал 
+с<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">однотональной</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">, 
+при малом </SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">индексе 
+угловой </SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs">модуляцией<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>и его 
+спектр.</SPAN></FONT></FONT></FONT></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">При 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">использовании 
+импульсных сигналов может применяться внутриимпульсная </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">модуляция, 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">модуляция 
+последовательности </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">импульсов, 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">или 
+комбинированные –способы модуляции. 
+</SPAN></FONT></FONT></FONT></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.24.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.24.png"></FONT></SPAN></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face="">Внутриимпульсная амплитудная 
+модуляция</FONT></SPAN></SPAN></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN></SPAN>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.25.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.25.png"></FONT></SPAN></SPAN></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0>&nbsp;<SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Радиоимпульсы 
+с внутриимпульсной угловой </SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">модуляцией</SPAN></FONT></FONT></FONT></SPAN></SPAN></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN></SPAN></SPAN></SPAN></SPAN>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"></SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><IMG class=image alt=19.26.png 
+src="file:///C:/Users/user/Desktop/ВТП - электронный учебник — копия/public_html/user-images/19.26.png">&nbsp;</FONT></SPAN></SPAN></SPAN></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; COLOR: black; FONT-SIZE: 16pt; language: ru; mso-ascii-font-family: 'Times New Roman'; mso-font-kerning: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""><FONT size=+0><FONT size=+0>&nbsp;<SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Последовательность 
+радиоимпульсов с амплитудной 
+модуляцией</SPAN></FONT></FONT></FONT></SPAN></SPAN></SPAN></SPAN></SPAN></P>
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><FONT face=""></FONT><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-bidi-theme-font: minor-bidi; mso-ascii-font-family: Tahoma; mso-fareast-theme-font: minor-fareast; mso-font-kerning: 12.0pt; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%">&nbsp;</P>
+<DIV 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; TEXT-INDENT: -0.1in; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; MARGIN-LEFT: 0.1in; VERTICAL-ALIGN: baseline; language: ru"><FONT 
+face=""><FONT size=+0><FONT size=+0><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Таким 
+образом, на сегодняшнем занятии рассмотрены вопросы</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; FONT-WEIGHT: bold; language: en-US; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">:</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"> 
+</SPAN><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs">Основные 
+способы представления сигналов. Основные виды сигналов, используемых в 
+радиосвязи военного назначения. Аналоговая 
+модуляция.</SPAN></FONT></FONT></FONT></DIV>
+<DIV 
+style="TEXT-ALIGN: left; MARGIN-TOP: 0pt; TEXT-INDENT: -0.1in; unicode-bidi: embed; DIRECTION: ltr; MARGIN-BOTTOM: 0pt; MARGIN-LEFT: 0.1in; VERTICAL-ALIGN: baseline; language: ru"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; FONT-SIZE: 14pt; FONT-WEIGHT: bold; language: ru; mso-ascii-font-family: Tahoma; mso-font-kerning: 12.0pt; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs"><FONT 
+face=""></FONT></SPAN>&nbsp;</DIV></SPAN></SPAN><SPAN 
+style="mso-bidi-font-weight: bold"><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: black; language: ru; mso-bidi-theme-font: minor-bidi; mso-ascii-font-family: Tahoma; mso-fareast-theme-font: minor-fareast; mso-font-kerning: 12.0pt; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%">
+<P style="MARGIN: 0cm 0cm 8pt" class=MsoNormal><SPAN 
+style="mso-bidi-font-weight: bold"><A 
+href="C:\Users\user\Desktop\ВТП - электронный учебник — копия\public_html\page55.html"><FONT 
+face="">Перейти к 
+тесту</FONT></A></SPAN></P></SPAN><O:P></O:P></SPAN></SPAN></BODY></HTML>
